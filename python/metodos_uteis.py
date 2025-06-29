@@ -1,3 +1,4 @@
+''' 
 # Métodos úteis pra tudo (listas, tuplas, sets, dicts)
 
 # ---------LISTAS/TUPLAS---------
@@ -121,3 +122,5 @@ for i in dict.keys():	# Busca apenas as chaves dentro do dicionário
 dicts['string']	# Para acessar um valor de um dicionário basta printarmos o dicionário e colocar entre colchetes e aspas a chave que queremos.
 dict.get('valor') # Também podemos utilizar a função get() para acessar um valor. No .get() podemos após o valor  comum passar um valor para ser printado no terminal caso ela não seja encontrada.
 dict.fromkeys( 'iteravel' )	# Cria um novo dicionário com chaves proveniente do iteravel (uma lista, um dicionário), os valores por padrão serão None
+
+'''
