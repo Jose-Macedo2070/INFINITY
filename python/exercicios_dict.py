@@ -66,25 +66,25 @@
 #         print('-------------------------')
 
 
-dicionario = {'Chave1': '', 'Chave2': '', 'Chave3': '', 'Chave4': ''}
+# dicionario = {'Chave1': '', 'Chave2': '', 'Chave3': '', 'Chave4': ''}
 
 
-del(dicionario['Chave1'])
+# del(dicionario['Chave1'])
 
 
-lista_chaves = ['Chave1', 'Chave2', 'Chave3', 'Chave4']
+# lista_chaves = ['Chave1', 'Chave2', 'Chave3', 'Chave4']
 
 
-todas_existem = True
+# todas_existem = True
 
-for chave in lista_chaves:
+# for chave in lista_chaves:
 
-    if chave not in dicionario:
-        todas_existem = False
-        break
+#     if chave not in dicionario:
+#         todas_existem = False
+#         break
 
 
-print(todas_existem)
+# print(todas_existem)
 
 
 
