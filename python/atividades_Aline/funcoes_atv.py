@@ -31,3 +31,18 @@ def cadastrar_produto(produto, custo):
 def exibir_produtos():
     
     return produtos
+
+
+
+
+''' ---------------Função para converter fahrenheit em celsios '''
+def fahrenheit_p_celsios(temp):
+    return (temp * 1.8) + 32
+
+''' ---------------Função para converter celsios em kelvin '''
+def kelvin(temp):
+    return (temp + 273.15)
+
+''' ---------------Função para converter celsios em fahrenheit '''
+def celsios_p_fahrenheit(temp):
+    return (temp - 32) / 1
