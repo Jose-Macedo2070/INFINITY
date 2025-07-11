@@ -16,6 +16,8 @@
 #     peso_int = int(str_peso)
 #     altura_float = float(str_altura)
 
+
+# oi
 # except ValueError:
 #     print('Digite apenas números.')
 

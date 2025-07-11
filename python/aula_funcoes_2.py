@@ -126,6 +126,19 @@ a função map para retornar uma nova lista contendo o dobro de cada número na 
 '''ex 05: Crie uma função que aceita uma lista de números e use
 a função filter para retornar uma nova lista contendo apenas os números pares da lista de entrada.'''
 
+numeros = [1, 2, 3, 4 ]
+numeros_pares = list(filter(lambda x: x % 2 == 0, numeros))
+print(numeros_pares)
+
+
+
+
+
+
+
+
+
+
 
 '''ex 7: Crie uma função chamada criar_lista_de_compras que
 aceita um número variável de itens de compras como
