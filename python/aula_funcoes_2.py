@@ -126,13 +126,15 @@ a função map para retornar uma nova lista contendo o dobro de cada número na 
 '''ex 05: Crie uma função que aceita uma lista de números e use
 a função filter para retornar uma nova lista contendo apenas os números pares da lista de entrada.'''
 
-numeros = [1, 2, 3, 4 ]
-numeros_pares = list(filter(lambda x: x % 2 == 0, numeros))
-print(numeros_pares)
+# numeros = [1, 2, 3, 4 ]
+# numeros_pares = list(filter(lambda x: x % 2 == 0, numeros))
+# print(numeros_pares)
 
 
 
-
+'''ex 6: Crie uma função que aceita uma lista de strings e use a
+função reduce (importada de functools) para encontrar
+a maior string na lista.'''
 
 
 
@@ -145,3 +147,98 @@ aceita um número variável de itens de compras como
 argumentos posicionais (usando *args). A função deve
 criar e retornar uma lista de compras que contenha
 todos os itens fornecidos.'''
+
+# def criar_lista_de_compras(*args):
+#     lista_de_compras.append(args)
+#     return (f'o produto {args} foi adicionado com sucesso')
+
+
+# def mostrar_lista_de_compras(lista):
+#     print('atualmente esses são os produtos cadastrados')
+#     for i in lista:
+#         return (f'{i}')
+
+# lista_de_compras = []
+
+# while True:
+#     opcao = int(input('Digite [1]- para cadastrar um item, \n[2]- para mostrar sua lista até agora ou \n[0] para encerrar o programa: '))
+
+
+#     if opcao == 0:
+#         print('Encerrando o código.')
+#         break
+
+
+#     elif opcao == 1:
+#         produto = input('Digite o nome do produto: ')
+#         print(criar_lista_de_compras(produto))
+#         print(40 * '-')
+#         continue
+        
+
+
+#     elif opcao == 2:
+#         print(mostrar_lista_de_compras(lista_de_compras))
+
+
+# como fazer passando um item de lista de cada vez
+
+
+
+
+
+
+'''ex 8: Crie uma função que aceite dois números e uma
+operação (por exemplo, adição, subtração,
+multiplicação, divisão) como argumentos e use funções
+lambda para realizar a operação especificada. A função
+deve retornar o resultado da operação.'''
+
+print('-' * 4, 'BEM VINDO A CALCULADORA', '-' * 4)
+
+
+while True:
+    num_1 = input('Digite um número inteiro: ')
+    num_2 = input('Digite outro número inteiro: ')
+
+    try:
+        num_1_int = int(num_1)
+        num_2_int = int(num_2)
+        print('Escolha o quer fazer com os números.')
+        opcao = int(input('Digite:\n[1] para somar; \n[2] para subtrair; \n[3] para multiplicar; \n[4] para dividir ou \n[0] para sair. '))
+        
+        if opcao == 0:
+            print('Obrigado por ultilizar a nossa calculadora')
+            break
+
+        elif opcao == 1:
+            soma = lambda x, y : x + y
+            print(f'Soma: {soma(num_1_int, num_2_int)}')
+            continue
+
+        elif opcao == 2:
+            subitracao = lambda x, y : x - y
+            print(f'Subtração: {subitracao(num_1_int, num_2_int )}')
+            continue
+
+        elif opcao == 3:
+            multiplicacao = lambda x, y : x * y
+            print(f'Multiplicação: {multiplicacao(num_1_int, num_2_int)}')
+            continue
+
+        elif opcao == 4:
+            divisao = lambda x, y : x / y
+            print(f'Divisão: {divisao(num_1_int, num_2_int)}')
+            continue
+        
+        else:
+            print('Opção inválida, tente novamente')
+        
+    except:
+        print('digite apenas números.')
+        continue
+
+
+
+
+
