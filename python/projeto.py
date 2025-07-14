@@ -33,10 +33,12 @@ tarefas = [{
     'Prioridade': 2,
     'status': True
 }]
-'''
+
+# Funções: que eu preciso
+
+
 def add_tarefa():
     ...
-# Funções: que eu preciso
 def marcar_como_concluido():
     # Pegar a tarefa (nome, índice, etc) e marcar o status como concluído
     ...
@@ -52,71 +54,8 @@ def exibir_tarefas_prioridade(prioridade):
 def exibir_tarefas_categoria(categoria):
     # Percorrer a lista de tarefas e filtrar (if) as tarefas com a mesma categoria passada
     ...
-
-
-
-
-tarefas = []
-
-indice = 1
-
-
-print(10* '-', 'MENU', 10* '-')
-while True:
-
-    opcao = int(input('Digite: \n[1]- Para adicionar uma nova tarfa; \n[0]- Para encerrar o código; \nDigite aqui: '))
-
-
-    if opcao == 0:
-        break
-
-    elif opcao == 1:
-        nome = input('Digite o nome da tarefa: ')
-        descricao = input('Descreva a tarefa: ')
-        categoria = input('Dê uma categoria tarefa: ')
-        prioridade = int(input('Diga a prioridade da tarefa de 1 a 3, sendo 1 a mais baixa e 3 a mais alta : '))
-    
-
-
-        dicionario = {
-        'ID': len(tarefas),
-        'Nome': nome,
-        'Descrição': descricao,
-        'Categoria': categoria.lower(),
-        'Prioridade': prioridade,
-        'Concluido': False
-        }
-    
-        tarefas.append(dicionario)
-        print(tarefas)
-        continue
-
-        
-'''xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'''
-# https://dontpad.com/projeto-funcoes
-
 '''
-- ID
-- Nome 
-- Descrição
-- Categoria
-- Prioridade
-- status
 
-Métodos:
-- listar tarefas (for)
-- marcar a tarefa concluída
-  - nome
-  - id
-  - índice
-- exibir a tarefa prioridade/categoria
-  - for
-  - qual a prioridade/categoria (if)
--adicionar tarefa
-  - criar o dicionário
-  - adicionar na lista
-
-- Menu interativo (while)
 
 
 tarefas = []
@@ -136,6 +75,7 @@ def add_tarefa():
     }
 
     tarefas.append(tarefa)
+    return (f'Tarefa adicionada com sucesso')
 
 def marcar_como_concluido():
     # Pegar a tarefa (nome, índice, etc) e marcar o status como concluído
@@ -150,13 +90,13 @@ def listar_tarefas():
     for tarefa in tarefas:
         status = 'Concluído' if tarefa['concluido'] else 'Pendente'
 
-        print('-----')
         print(f'ID: {tarefas.index(tarefa)}')
         print(f'Nome: {tarefa['nome']}')
         print(f'Descrição: {tarefa['descricao']}')
         print(f'Categoria: {tarefa['categoria']}')
         print(f'Prioridade: {tarefa['prioridade']}')
         print(f'Status: {status}')
+        print(10 * '-')
 
 def exibir_tarefas_prioridade(prioridade):
     # Percorrer a lista de tarefas e filtrar (if) as tarefas com a mesma prioridade passada
@@ -167,22 +107,42 @@ def exibir_tarefas_categoria(categoria):
     pass
 
 
-
-desafio    
 def remover_tarefas_categoria():
+    ...
 
 
-add_tarefa()
-add_tarefa()
-listar_tarefas()
+
+while True:
+
+    menu_1 = int(input('Digite: \n[1]- Nova tarefa; \n[2]- Listar tarefas; \n[0]- Encerrar o código; \nEscolha: '))
+
+
+    if menu_1 == 0:
+        print('Encerrando o código')
+        break
+
+    elif menu_1 == 1:
+        print(add_tarefa())
+        continue
+
+    elif menu_1 == 2:
+        print('Aqui estão todas as tarefas listadas até agora: \n', 10 * '-' )
+        print(listar_tarefas())
+        
+        menu_2 = input('Digite: \n[1]- Exibir tarefas por prioridade; \n[2]- Exibir tarfas por categoria; \n[0]- Voltar para o menu anterior; \nEscolha: ')
+        
+        if menu_2 == 0:
+            continue
+
+
+
+
+
+
+
+
+
+
+
+
 print(tarefas)
-'''
-
-
-
-
-
-
-        
-        
-
