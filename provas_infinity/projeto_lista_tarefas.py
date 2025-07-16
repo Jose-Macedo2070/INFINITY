@@ -126,6 +126,7 @@ def exibir_tarefas_categoria(categorias):
         if tarefa['categoria'] == categorias.lower():
             status = 'Concluído' if tarefa['concluido'] else 'Pendente'
 
+            print(f'Aqui estão as tarefas com categoria {categoria}:')
             print(f'ID: {tarefas.index(tarefa)}')
             print(f'Nome: {tarefa["nome"]}')
             print(f'Descrição: {tarefa["descricao"]}')
@@ -167,7 +168,7 @@ while True:
         print('Aqui estão todas as tarefas listadas até agora: \n', 10 * '-' )
         listar_tarefas()
         
-        menu_2 = int(input('Digite: \n[1]- Exibir tarefas por prioridade; \n[2]- Exibir tarefas por categoria; \n[3]- Remover tarefas \n[4]- Concluir tarefa \n[0]- Voltar para o menu anterior; \nEscolha: '))
+        menu_2 = int(input('Digite: \n[1]- Exibir tarefas por prioridade; \n[2]- Exibir tarefas por categoria; \n[3]- Remover tarefas; \n[4]- Concluir tarefa; \n[0]- Voltar para o menu anterior; \nEscolha: '))
         
         if menu_2 == 0:
             continue
