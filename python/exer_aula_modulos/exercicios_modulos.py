@@ -23,13 +23,13 @@ Dúvidas para próxima aula:
 # (soma, subtração, multiplicação e divisão).
 
 
-num1 = int(input('Digite um número inteiro: '))
-num2 = int(input('Digite outro número inteiro: '))
+# num1 = int(input('Digite um número inteiro: '))
+# num2 = int(input('Digite outro número inteiro: '))
 
-print(f'seus números somados {somar(num1,num2)}')
-print(f'seus números subtraidos {subitrair(num1,num2)}')
-print(f'seus números multiplicados {multiplicar(num1,num2)}')
-print(f'seus números divididos {dividir(num1,num2)}')
+# print(f'seus números somados {somar(num1,num2)}')
+# print(f'seus números subtraidos {subitrair(num1,num2)}')
+# print(f'seus números multiplicados {multiplicar(num1,num2)}')
+# print(f'seus números divididos {dividir(num1,num2)}')
 
 
 
@@ -46,3 +46,28 @@ print(f'seus números divididos {dividir(num1,num2)}')
 
 
 # fazer um menu com  opcao
+
+string_input = input('Digite qualquer coisa: ')
+while True:
+    opcao = int(input('Digite:\n[1]- Inverter palavras; \n[2]- Contar palvras; \n[3]- Contar letras; \n[4]- Verificar se é um palindromo; \n[0]- encerrar o código. \nOpção aqui: '))
+
+
+    if opcao == 0:
+        print('Código encerrado')
+        break
+
+    elif opcao == 1:
+        print(inverter_str(string_input))
+
+    elif opcao == 2:
+        print(contar_palavras(string_input))
+
+    elif opcao == 3:
+        print(contar_letras(string_input))
+
+    elif opcao == 4:
+        print(verificar_palindromo(string_input))
+    
+    else:
+        print('opção inválida ou você não digitou nada.')
+        continue
