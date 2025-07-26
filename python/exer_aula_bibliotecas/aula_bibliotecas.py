@@ -9,6 +9,22 @@ from func_exerc_bibliotecas import *
 # como quadrados, retângulos e círculos. Use funções
 # matemáticas do módulo math para realizar os cálculos.
 
+while True:
+    opcao = int(input('Digite: \n[1]- Para calcular área \n[2]para calcular o perimétro \n[0]- ecerrar o código \nopção: '))
+    
+
+    if opcao == 0:
+        break
+
+    elif opcao == 1:
+        area = int(input('Digite a forma que quer calcular a área: \n[1]-Quadrado \n[2]-retângulo \n[3]-circulo'))
+
+        if area == 1:
+            print(calcular_area_quadrado())
+        
+        elif area == 2:
+            print(calcular_area_retangulo())
+    
 
 
 

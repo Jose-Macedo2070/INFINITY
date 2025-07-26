@@ -26,10 +26,10 @@ Dúvidas para próxima aula:
 # num1 = int(input('Digite um número inteiro: '))
 # num2 = int(input('Digite outro número inteiro: '))
 
-# print(f'seus números somados {somar(num1,num2)}')
-# print(f'seus números subtraidos {subitrair(num1,num2)}')
-# print(f'seus números multiplicados {multiplicar(num1,num2)}')
-# print(f'seus números divididos {dividir(num1,num2)}')
+# print(f'seus números somados: {somar(num1,num2)}')
+# print(f'seus números subtraidos: {subitrair(num1,num2)}')
+# print(f'seus números multiplicados: {multiplicar(num1,num2)}')
+# print(f'seus números divididos: {dividir(num1,num2)}')
 
 
 
@@ -47,8 +47,9 @@ Dúvidas para próxima aula:
 
 # fazer um menu com  opcao
 
-string_input = input('Digite qualquer coisa: ')
+string_input = input('Digite qualquer coisa: ').strip()
 while True:
+    
     opcao = int(input('Digite:\n[1]- Inverter palavras; \n[2]- Contar palvras; \n[3]- Contar letras; \n[4]- Verificar se é um palindromo; \n[0]- encerrar o código. \nOpção aqui: '))
 
 
