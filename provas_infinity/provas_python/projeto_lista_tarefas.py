@@ -96,10 +96,10 @@ def listar_tarefas():
         status = 'Concluído' if tarefa['concluido'] else 'Pendente'
 
         print(f'ID: {tarefas.index(tarefa)}')
-        print(f'Nome: {tarefa['nome']}')
-        print(f'Descrição: {tarefa['descricao']}')
-        print(f'Categoria: {tarefa['categoria']}')
-        print(f'Prioridade: {tarefa['prioridade']}')
+        print(f'Nome: {tarefa["nome"]}')
+        print(f'Descrição: {tarefa["descricao"]}')
+        print(f'Categoria: {tarefa["categoria"]}')
+        print(f'Prioridade: {tarefa["prioridade"]}')
         print(f'Status: {status}')
         print(10 * '-')
 
@@ -181,10 +181,10 @@ while True:
             for tarefa in prioridade_alta:
                 status = 'Concluído' if tarefa['concluido'] else 'Pendente'
 
-                print(f'Nome: {tarefa['nome']}')
-                print(f'Descrição: {tarefa['descricao']}')
-                print(f'Categoria: {tarefa['categoria']}')
-                print(f'Prioridade: {tarefa['prioridade']}')
+                print(f'Nome: {tarefa["nome"]}')
+                print(f'Descrição: {tarefa["descricao"]}')
+                print(f'Categoria: {tarefa["categoria"]}')
+                print(f'Prioridade: {tarefa["prioridade"]}')
                 print(f'Status: {status}')
                 print(10 * '-')
 
@@ -195,10 +195,10 @@ while True:
             for tarefa in prioridade_media:
                 status = 'Concluído' if tarefa['concluido'] else 'Pendente'
 
-                print(f'Nome: {tarefa['nome']}')
-                print(f'Descrição: {tarefa['descricao']}')
-                print(f'Categoria: {tarefa['categoria']}')
-                print(f'Prioridade: {tarefa['prioridade']}')
+                print(f'Nome: {tarefa["nome"]}')
+                print(f'Descrição: {tarefa["descricao"]}')
+                print(f'Categoria: {tarefa["categoria"]}')
+                print(f'Prioridade: {tarefa["prioridade"]}')
                 print(f'Status: {status}')
                 print(10 * '-')
 
@@ -209,10 +209,10 @@ while True:
             for tarefa in prioridade_baixa:
                 status = 'Concluído' if tarefa['concluido'] else 'Pendente'
 
-                print(f'Nome: {tarefa['nome']}')
-                print(f'Descrição: {tarefa['descricao']}')
-                print(f'Categoria: {tarefa['categoria']}')
-                print(f'Prioridade: {tarefa['prioridade']}')
+                print(f'Nome: {tarefa["nome"]}')
+                print(f'Descrição: {tarefa["descricao"]}')
+                print(f'Categoria: {tarefa["categoria"]}')
+                print(f'Prioridade: {tarefa["prioridade"]}')
                 print(f'Status: {status}')
                 print(10 * '-')
 
