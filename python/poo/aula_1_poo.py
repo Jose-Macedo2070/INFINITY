@@ -138,38 +138,119 @@
 
 
 # atv_4
-class Calculadora:
-    def __init__(self, numero_1, numero_2, operacao):
-        self.numero_1 = numero_1
-        self.numero_2 = numero_2
-        self.operacao = operacao
+# class Calculadora:
+#     def __init__(self, numero_1, numero_2, operacao):
+#         self.numero_1 = numero_1
+#         self.numero_2 = numero_2
+#         self.operacao = operacao
 
    
-    def __str__(self):
+#     def __str__(self):
 
-        if self.operacao == '+':
-            return f'{self.numero_1} + {self.numero_2} = {self.numero_1 + self.numero_2}'
+#         if self.operacao == '+':
+#             return f'{self.numero_1} + {self.numero_2} = {self.numero_1 + self.numero_2}'
         
-        elif self.operacao == '-':
-            return f'{self.numero_1} - {self.numero_2} = {self.numero_1 - self.numero_2}'
+#         elif self.operacao == '-':
+#             return f'{self.numero_1} - {self.numero_2} = {self.numero_1 - self.numero_2}'
         
-        elif self.operacao == '*':
-            return f'{self.numero_1} + {self.numero_2} = {self.numero_1 * self.numero_2}'
+#         elif self.operacao == '*':
+#             return f'{self.numero_1} + {self.numero_2} = {self.numero_1 * self.numero_2}'
         
-        elif self.operacao == '/':
-            return f'{self.numero_1} + {self.numero_2} = {self.numero_1 / self.numero_2:.2f}'
+#         elif self.operacao == '/':
+#             return f'{self.numero_1} + {self.numero_2} = {self.numero_1 / self.numero_2:.2f}'
     
 
 
 
 
-# Digite os dois numeros e a operação desejada entre ("+", "-", "*", "/")
-calculo_1 = Calculadora(5, 7, '+')
-calculo_2 = Calculadora(5, 7, '-')
-calculo_3 = Calculadora(5, 7, '*')
-calculo_4 = Calculadora(5, 7, '/')
+# # Digite os dois numeros e a operação desejada entre ("+", "-", "*", "/")
+# calculo_1 = Calculadora(5, 7, '+')
+# calculo_2 = Calculadora(5, 7, '-')
+# calculo_3 = Calculadora(5, 7, '*')
+# calculo_4 = Calculadora(5, 7, '/')
 
-print(calculo_1)
-print(calculo_2)
-print(calculo_3)
-print(calculo_4)
+# print(calculo_1)
+# print(calculo_2)
+# print(calculo_3)
+# print(calculo_4)
+
+
+
+
+# atv_5
+
+# Crie uma classe chamada Fatura , a classe Fatura deve incluir os seguintes atributos o nome do item; o preço unitário do item; quantidade de item a ser faturado; valor total da fatura; Sua classe deve ter um construtor que inicialize todos os atributos menos o valor total da fatura. Forneça um método chamado gerar_fatura que calcula o valor da fatura (isto é, multiplicar a quantidade pelo preço por item).
+
+
+# class Fatura:
+#     def __init__(self, nome_item, preco_item, qtd_item):
+#         self.nome_item = nome_item
+#         self.preco_item = preco_item
+#         self.qtd_item = qtd_item
+#         self.valor_total = 0
+
+
+#     def gerar_fatura(self):
+#         self.valor_total = self.preco_item * self.qtd_item
+#         print(f'Fatura atual: R$ {self.valor_total:.2f}')
+
+
+
+#     def __str__(self):
+#         return f'Nome: {self.nome_item}\nValor Unitário: R$ {self.preco_item:.2f}\nEm Estoque: {self.qtd_item}'
+    
+
+
+
+# item1 = Fatura('Computador', 3000, 7)
+
+
+# print(item1)
+# item1.gerar_fatura()
+
+
+
+# DESAFIO PRÁTICO
+'''Crie uma classe Hotel que permita gerenciar
+funcionários, reservas e quartos de hotel. Os
+funcionários devem ter informações como nome,
+função e salário. O hotel deve ser capaz de
+receber reservas, atribuí-las a quartos e
+calcular a conta final.'''
+
+
+
+class Hotel:
+    def __init__(self):
+        self.lista_funcionarios = []
+        self.lista_reservas = []
+        self.lista_quartos = []
+
+    def add_funcionarios(self, funcionario):
+        self.lista_funcionarios.append(funcionario)
+
+    def fazer_reserva(self):
+        ...
+
+
+
+class Funcionario:
+    def __init__(self, nome_funcionario, funcao, salario ):
+        self.nome_funcionario = nome_funcionario
+        self.funcao = funcao
+        self.slario = salario
+
+
+
+
+class Reservas:
+    def __init__(self, numero_do_quarto, valor_da_diaria):
+        pass
+
+
+
+
+
+
+hotel = Hotel()
+funcionario1 = Funcionario('José', 'Recepção', 5000)
