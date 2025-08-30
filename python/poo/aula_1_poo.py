@@ -216,41 +216,90 @@ funcionários, reservas e quartos de hotel. Os
 funcionários devem ter informações como nome,
 função e salário. O hotel deve ser capaz de
 receber reservas, atribuí-las a quartos e
-calcular a conta final.'''
+calcular a conta final.
+
+CRIAR CLASSES:
+- HOTEL (LISTAS DAS CLASSES P/ GERENCIAR)
+- FUNCIONARIOS (NOME, CARGO, SALÁRIO)
+- RESERVAS
+- QUARTOS
+
+QUE METODOS FAZER:
+- ADICIONAR OBJETOS( FUNCIONARIOS, RESERVA, QUARTOS)
+- LISTAR COM FOR
+- FAZER A CONTA DE (TEMPO RESERVADO * VALOR DA DIÁRIA)
+
+
+HOTEL: DEVE CONSEGUIR RECEBER A RESERVA E DEPOIS ALOCAR A UM QUARTO CALCULANDO A DIÁRIA
+
+
+'''
+
+
+
+
+
 
 
 
 class Hotel:
     def __init__(self):
         self.lista_funcionarios = []
+        # self.lista_quartos = []
         self.lista_reservas = []
-        self.lista_quartos = []
 
     def add_funcionarios(self, funcionario):
         self.lista_funcionarios.append(funcionario)
 
-    def fazer_reserva(self):
-        ...
+    def fazer_reserva(self, reserva):
+        self.lista_reservas.append(reserva)
+        
+    def listar_funcionario(self):
+        for i in self.lista_funcionarios:
+            print(f'Nome: {i.nome_funcionario} \nCargo: {i.funcao} \nSalário: R$ {i.salario:.2f}')
+            print('-' * 30)
 
-
+    def chekout(self):
+        for i in self.lista_reservas:
+            print(f'A reserva do {i.numero_do_quarto} ficou no valor de R$ {i.valor_da_diaria * i.tempo_alugado}.00')
+        
 
 class Funcionario:
     def __init__(self, nome_funcionario, funcao, salario ):
         self.nome_funcionario = nome_funcionario
         self.funcao = funcao
-        self.slario = salario
+        self.salario = salario
+
+
+    def __str__(self):
+        return f'Nome: {self.nome_funcionario}\nFunção: {self.funcao}\nSalário {self.salario}'
 
 
 
 
 class Reservas:
-    def __init__(self, numero_do_quarto, valor_da_diaria):
-        pass
+    def __init__(self, numero_do_quarto, valor_da_diaria, tempo_alugado):
+        self.numero_do_quarto = numero_do_quarto
+        self.valor_da_diaria = valor_da_diaria
+        self.tempo_alugado = tempo_alugado
+
+    def __str__(self):
+        return f'Número do Quarto: {self.numero_do_quarto}\nValor da Diária: R${self.valor_da_diaria:.2f}\nTempo Alugado: {self.tempo_alugado} dias'
 
 
 
-
-
-
+#objétos
 hotel = Hotel()
 funcionario1 = Funcionario('José', 'Recepção', 5000)
+funcionario2 = Funcionario('aline', 'gerente', 8000)
+reserva1 = Reservas('Quarto 1', 50, 25)
+
+# adicionando
+hotel.add_funcionarios(funcionario1)
+hotel.add_funcionarios(funcionario2)
+hotel.fazer_reserva(reserva1)
+
+
+# listando
+hotel.listar_funcionario()
+hotel.chekout()
