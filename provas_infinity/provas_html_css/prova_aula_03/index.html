@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário de cadastro</title>
+</head>
+
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form action="/enviar" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <label for="pais">selcione seu pais de origem:</label><br>
+        <select id="pais" name="pais" required>
+            <option value="">--Selecione--</option>
+            <option value="brasil">Brasil</option>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="colombia">Colômbia</option>
+            <option value="mexico">México</option>
+        </select><br><br>
+
+        <label for="menssagem">Fale um pouco sobre você:</label><br>
+        <textarea id="menssagem" name="menssagem" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit" value="Cadastrar">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+
+</html>
