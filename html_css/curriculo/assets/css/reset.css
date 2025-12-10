@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+    /*coloca-se esse valor para o rem ficar da forma que queremos multiplicando ele por 10 para dar o valor em px que gostariamos ou seja 2rem são = a 20px*/
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}

@@ -4,81 +4,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo Dev Zé Macêdo </title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Portifólio Dev Zé Macêdo </title>
 </head>
 
 
-<body>
-    <div class="pag_1">
-        <img src="/html_css/curriculo/src/imgs/Perfil_Instagram.png" alt="Perfil_Instagram.png">
+<body class="corpo">
 
-        <div class="secao_contatos">
-            <h2>CONTATOS</h2>
-            <hr>
-            <ul>
-                <li>numero</li>
-                <li>email</li>
-                <li>endereço</li>
-                <li>redes</li>
+    <header class="cabecalho">
+        <aside class="menu-lateral">
+            <div class="logo">
+                <img src="./assets/imgs/Perfil_Instagram.png" alt="Perfil_Instagram.png" class="foto-perfil">
+                <h2>JOSÉ MACÊDO</h2>
+            </div>
+
+            <nav class="menu-navegacao">
+                <ul> <!--colocar essa ul com ancoras para as sections  -->
+                    <li><a href="#inicio" class="botao-navegacao">Início</a></li>
+                    <li><a href="#sobre-mim" class="botao-navegacao">Sobre mim</a></li>
+                    <li><a href="#servicos" class="botao-navegacao">O que eu faço</a></li>
+                    <li><a href="#resumo" class="botao-navegacao">Resumo</a></li>
+                    <li><a href="#contato"  class="botao-navegacao">contato</a></li>
+                    <li><a href="" class="botao-whatsapp ">Enviar via whatsapp</a></li>
+                </ul>
+            </nav>
+            <!-- icones com links para redes sociais aqui -->
+            <ul class="lista-icones">
+                <li>
+                    <a href="">
+                        <img src="./assets/icons/github-white.png" alt="icone github" class="icones">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="./assets/icons/linkedin-circle.png" alt="icone linkedin" class="icones">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="./assets/icons/instagram-circle.png" alt="icone instagram" class="icones">
+                    </a>
+                </li>
+
+
+
             </ul>
-        </div>
 
-        <div class="secao_formacao">
-            <h2>FORMAÇÃO</h2>
-            <hr>
-            <ul>
-                <h3>UNIFATECIE | 2023 - 2026</h3>
-                <li>Tecnólogo em Análise e Desenvolvimento de Sistemas</li>
-            </ul>
-        </div>
+        </aside>
+    </header>
 
-        <div class="secao_habilidades">
-            <h2>HABILIDADES</h2>
-            <hr>
-            <ul>
-                <li>Proatividade</li>
-                <li>Auto de data</li>
-                <li>Flexível</li>
-                <li>Colaborativo</li>
-                <li>Fácil aprendeizado</li>
-                <li>Calmo</li>
-                <li>Sociavel</li>
-            </ul>
-        </div>
-    </div>
+    <main class="container-principal">
+        <section id="inicio"> <!-- Início -->
+
+            <p>Bem-vindo</p>
+            <h2>Dev Full-Stack</h2>
+            <a href="" class="botao-contate-me">Contate-me</a>
 
 
-    <div class="pag_2">
-        <h1>JOSÉ MACÊDO | 24 YRS</h1>
-        <h2>ESTUDANTE DE ADS</h2>
+
+
+
+        </section>
+
         <hr>
 
-        <h3>PERFIL</h3>
-        <hr>
-        <P>Sou estudante de Tecnologia da informação na faculdade Unifatecie e estou à procura de uma oportunidade de
-            estágio para começar minha jornada na área de de dados. Tenho me interessado bastante por SQL e Python, que
-            estouestudando com mais afinco graças ao curso que estou fazendo na Infinity school aos domingos, onde
-            desenvolvi grande parte do meu interesse na área de dados.
-            Me considero uma pessoa proativa, que gosta de resolver problemas e que está sempre disposta a aprender
-            coisas novas. Gosto de trabalhar com atenção aos detalhes e busco fazer tudo da melhor forma possível.
-        </P>
-
-        <h3>EXPERIÊNCIAS</h3>
-        <hr>
-        <ul>
-            <h3>Instituto de Formação Técnica de Pernambuco | 2020 - PRESENT</h3>
-            <h4>Gerente de Sistemas</h4>
+        <section id="sobre-mim">
+            <!-- Sobre mim -->
+            <h2 class="titulo-sobreposto">SOBRE MIM</h2>
+            <P class="texto-sobreposto">Um pouco sobre mim</P><!--colocar em sobreposição ao o h2 anterior -->
+            <hr class="linha-de-divisao">
             
-            <li>Ultilização e manutenção de sistemas de notas e provas de alunos da instituição.</li>
+            <div class="container-sobre-mim">
 
-            <li>Trabalho também diretamente com o público auxiliando no acesso as aulas online e na resolução de dúvidas
-                sobre sistema de ensino.</li>
-        </ul>
+                <P>Sou estudante de Tecnologia da informação na faculdade Unifatecie e estou à procura de uma oportunidade
+                    de
+                    estágio para começar minha jornada na área de de dados. Tenho me interessado bastante por SQL e Python,
+                    que
+                    estouestudando com mais afinco graças ao curso que estou fazendo na Infinity school aos domingos, onde
+                    desenvolvi grande parte do meu interesse na área de dados.
+                    Me considero uma pessoa proativa, que gosta de resolver problemas e que está sempre disposta a aprender
+                    coisas novas. Gosto de trabalhar com atenção aos detalhes e busco fazer tudo da melhor forma possível.
+                </P>
+                <div class="container-lista-sobre-mim-e-botao-whatsapp">
 
-        <h3>LINGUAGENS</h3>
-        <hr>
-    </div>
+                    <ul>
+                        <li>Nome: José Macêdo</li>
+                        <li>Email: <a href="mailto:josemacedowork@gmail.com">josemacedowork@gmail.com</a></li>
+                        <li>Idade: 24 yrs</li>
+                    </ul>
+                    <a href="" class="botao-whatsapp">Enviar via Whatsapp</a>
+                </div>
+                
+            </div>
+                <p>parte de experiência</p>
 
+
+        </section>
+
+
+
+        <section id="servicos">
+            <!-- O que eu faço -->
+            <h2 class="titulo-sobreposto">SERVIÇOS</h2>
+            <P class="texto-sobreposto">O que eu faço</P><!--colocar em sobreposição ao o h2 anterior -->
+            <hr class="linha-de-divisao">
+
+
+
+
+        </section>
+
+  
+
+        <section id="resumo">
+            <!-- RESUMO -->
+            <h2 class="titulo-sobreposto">RESUMO</h2>
+            <P class="texto-sobreposto">Aonde já trabalhei/Trabalho</P><!--colocar em sobreposição ao o h2 anterior -->
+            <hr class="linha-de-divisao">
+
+            <ul>
+                <h3>Instituto de Formação Técnica de Pernambuco | 2020 - PRESENT</h3>
+                <h4>Gerente de Sistemas</h4>
+
+                <li>Ultilização e manutenção de sistemas de notas e provas de alunos da instituição.</li>
+
+                <li>Trabalho também diretamente com o público auxiliando no acesso as aulas online e na resolução de
+                    dúvidas
+                    sobre sistema de ensino.</li>
+            </ul>
+
+            <p>conhecimentos/stacks</p>
+        </section>
+
+
+
+        <section id="contato">
+            <!-- contato -->
+            <h2 class="titulo-sobreposto">CONTATO</h2>
+            <P class="texto-sobreposto">Fala comigo</P><!--colocar em sobreposição ao o h2 anterior -->
+            <hr class="linha-de-divisao">
+
+            <p>telefone</p>
+            <p>email</p>
+            <p>siga-me</p>
+
+            <div class="bloco-com-icones">
+                <ul class="lista-icones">
+                    <li>
+                        <a href="">
+                            <img src="./assets/icons/github-white.png" alt="icone github" class="icones">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="./assets/icons/linkedin-circle.png" alt="icone linkedin" class="icones">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="./assets/icons/instagram-circle.png" alt="icone instagram" class="icones">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="./assets/icons/whatsapp-circle.png" alt="icone whatsapp" class="icones">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+
+            <!-- <div>-->
+            <p>entre em contato comigo</p><!--caps lock -->
+            <a href="" class="botao-whatsapp">Enviar via Whatsapp</a>
+            <!--</div> -->
+
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer class="rodape">
+        <p>Copyright © 2024 <span>José Macêdo</span>. </p>
+        <p>Todos os direitos reservados.</p>
+
+    </footer>
 
 
 </body>
