@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+}
+
+ul,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+/* XXXXXXXXXXX RESET XXXXXXXXXXX */
+
+
+
+
+.cabecalho {
+    background-color: #0f2544;
+    color: #f5f7fa;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 4.8rem;
+
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.6rem;
+}
+
+.link {
+    color: #f5f7fa;
+
+}
+
+.container_principal {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.secao_1 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 4rem;
+    font-size: 1.6rem;
+    text-align: center;
+
+    background-color: #e9eef3;
+    padding: 5rem;
+}
+
+.btn_secao_1 {
+    background-color: #1a73e8;
+    color: #ffffff;
+
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+
+
+
+.secao_2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.6rem;
+    background-color: #F5F7FA;
+}
+
+.bloco_caixas_secao_2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.caixa_secao_2 {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10rem;
+    width: 35rem;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 2rem;
+
+}
+
+
+
+
+.secao_3 {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    background-color: #fff;
+    padding: 5rem;
+
+
+}
+
+.bloco_caixas_secao_3 {
+    display: flex;
+    gap: 5rem;
+
+}
+
+
+.caixa_secao_3 {
+    background-color: #d0d5db;
+    padding: 2rem;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+.rodape {
+    background-color: #1C1C1C;
+    color: #ffffff;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem;
+}
+
+.container_rodape {
+    display: flex;
+    gap: 6rem;
+}
+
+.caixa_rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact {
+    margin-left: 10rem;
+}
