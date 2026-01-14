@@ -1,0 +1,122 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Fundo geral */
+.container_principal {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Card do formulário */
+.formulario {
+    background-color: #ffffff;
+    height: 30rem;
+    width: 30rem;
+    font-size: 1.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    border-radius: 1.2rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.25);
+}
+
+/* Campos */
+.campo_usuario,
+.campo_senha {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 25rem;
+}
+
+/* Labels */
+.labels {
+    font-weight: 600;
+    color: #333;
+}
+
+.label_usuario::before {
+  content: "👤";
+}
+
+.label_senha::before {
+    content: "🔑";
+}
+
+.labels::after {
+    content: "*";
+    color: red;
+}
+
+
+/* Inputs */
+.inputs {
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-radius: 0.6rem;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.inputs:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+
+
+/* Botões */
+.campo_btns {
+    display: flex;
+    gap: 2rem;
+}
+
+.btn_enviar,
+.btn_limpar {
+    font-size: 1.6rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Botão enviar */
+.btn_enviar {
+    background-color: #667eea;
+    color: #fff;
+}
+
+.btn_enviar:hover {
+    background-color: #5a6fdc;
+    transform: scale(1.05);
+}
+
+/* Botão limpar */
+.btn_limpar {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn_limpar:hover {
+    background-color: #d5d5d5;
+    transform: scale(1.05);
+}

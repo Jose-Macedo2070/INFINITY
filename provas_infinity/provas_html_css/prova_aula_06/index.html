@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<!-- Estrutura HTML:
+
+Crie um formulário simples com dois campos: "Nome de Usuário" e "Senha".Adicione dois botões: "Enviar" e "Limpar".
+
+Estilos Responsivos com Media Queries:
+
+Use Media Queries para garantir que o formulário se ajuste bem em diferentes tamanhos de tela (móvel, tablet, desktop).
+
+
+Em telas menores, o formulário deve ocupar toda a largura da tela, enquanto em telas maiores deve ser centralizado com uma largura fixa.
+
+Uso de Pseudo-elementos:
+
+Use o pseudo-elemento ::before para adicionar ícones decorativos antes dos campos "Nome de Usuário" e "Senha".
+
+Use o pseudo-elemento ::after para adicionar um efeito visual nos botões quando o mouse passar sobre eles (hover).
+
+Estilização Adicional:
+
+Aplique bordas arredondadas aos campos e botões.
+
+Utilize sombras sutis para dar profundidade ao formulário. -->
+
+<body class="container_principal">
+
+    <form action="index.html" class="formulario">
+       
+        <div class="campo_usuario">
+
+            <label for="usuario" class="labels label_usuario">Usuário:</label>
+            <input type="text" id="usuario" class="inputs" name="usuario" placeholder="Digite seu usuário aqui" required>
+        </div>
+
+        <div class="campo_senha">
+
+            <label for="senha" class="labels label_senha">Senha:</label>
+            <input type="password" id="senha" class="inputs" name="senha" placeholder="Digite sua senha" required>
+        </div>
+
+        <div class="campo_btns">
+
+            <button type="submit" class="btn_enviar">Enviar</button> 
+            <button type="reset" class="btn_limpar">Limpar</button>
+        </div>
+            
+
+    </form>
+
+</body>
+
+</html>
