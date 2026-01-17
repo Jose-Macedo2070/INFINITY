@@ -1,0 +1,55 @@
+@media (max-width: 1064px) {
+    .nav {
+        display: none;
+    }
+
+    .cabecalho {
+        justify-content: center;
+    }
+
+
+    .secao_2 {
+        padding: 2rem;
+        gap: 3rem;
+    }
+
+
+    .bloco_caixas_secao_2 {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        padding: 2rem;
+    }
+
+
+
+    .secao_3 {
+        padding: 2rem;
+        gap: 3rem;
+    }
+
+    .bloco_caixas_secao_3 {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .caixa_secao_3 {
+        width: 100%;
+    }
+
+
+
+    .container_rodape {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+
+
+}

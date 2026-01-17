@@ -2,15 +2,15 @@
 
 
 
-body,
+
 .corpo {
     font-size: 2rem;
     text-align: center;
     background-color: #212529;
     color: #fff;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
 
 }
 
@@ -56,12 +56,13 @@ body,
 
 .botao-navegacao {
     color: #fff;
+    transition: transform 0.3s, color 0.3s;
 }
 
 .menu-navegacao ul .botao-navegacao:hover {
     color: #00f7ff;
     transform: scale(1.1);
-    transition: 0.3s;
+    transition: transform 0.3s, color 0.3s;
     cursor: pointer;
 }
 
@@ -78,8 +79,8 @@ body,
 
 .botao-contate-me {
     background-color: rgba(0, 247, 255, 0);
-    border: 0.5rem solid #00f7ff;
     color: #111418;
+    border: 0.5rem solid #00f7ff;
     padding: 1rem 2rem;
     border-radius: 2rem;
     font-weight: bold;
@@ -91,8 +92,8 @@ body,
 .botao-whatsapp:hover,
 .botao-contate-me:hover {
     background-color: #00c1c7;
-    transform: scale(1.1);
     color: #fff;
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
@@ -147,8 +148,8 @@ body,
     gap: 2rem;
 }
 
-#inicio,
-p h2 {
+#inicio p,
+#inicio h2 {
     color: #000000;
 
 }
@@ -214,7 +215,27 @@ p h2 {
     font-size: 3rem;
     background-color: #212529;
     color: #fff;
+
 }
+
+#resumo ul {
+    text-align: justify;
+    list-style: circle;
+    padding: 3rem;
+   /* background-color: #343A40;
+    border-radius: 8px; */
+}
+
+
+#resumo h3 {
+    color: #00f7ff;
+    margin-bottom: 0.5rem;
+}
+/*
+#resumo h4 {
+    margin-bottom: 2rem;
+    font-weight: 400;
+} */
 
 #contato {
     padding: 4rem;
