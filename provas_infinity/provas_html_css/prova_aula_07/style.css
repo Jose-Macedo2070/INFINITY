@@ -1,0 +1,48 @@
+:root {
+    --font-size-sm: 15px;
+    --font-size-md: 25px;
+    --font-size-lg: 45px;
+    --font-size-xl: 65px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: solid 3px;
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    flex-flow: row wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+
+.textos {
+    border-left: solid 2px;
+    padding: 5px;
+    font-size: var(--font-size-xl);
+}
+
+@media (max-width: 1024px) { 
+    .textos{
+        font-size: var(--font-size-lg);
+    }
+}
+
+@media (max-width: 768px) { 
+    .textos{
+        font-size: var(--font-size-md);
+    }
+}
+
+@media (max-width: 480px) { 
+    .textos{
+        font-size: var(--font-size-sm);
+    }
+}

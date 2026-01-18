@@ -1,3 +1,11 @@
+
+:root {
+  --primary-bg-color: #f5f7fa;
+  --bg-header-color: #0f2544;
+  --text-color-white: #f5f7fa;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +15,7 @@
 html {
     font-size: 62.5%;
     font-family: Arial, sans-serif;
-    background-color: #f5f7fa;
+    background-color: var(--primary-bg-color);
 }
 
 ul,
