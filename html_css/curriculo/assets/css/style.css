@@ -7,10 +7,7 @@
     font-size: 2rem;
     text-align: center;
     background-color: #212529;
-    color: #fff;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+    color: #fff
 
 }
 
@@ -18,7 +15,7 @@
     background-color: #111418;
     color: #fff;
     height: 100vh;
-    width: 35rem;
+    width: 30rem;
 
     display: flex;
     flex-direction: column;
@@ -40,7 +37,7 @@
 .foto-perfil {
     padding: 0.8rem;
     border-radius: 10rem;
-    width: 20rem;
+    width: 15rem;
     background-color: #343A40;
     margin-bottom: 1rem;
 }
@@ -51,11 +48,11 @@
     gap: 2rem;
     margin-top: 4rem;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 .botao-navegacao {
-    color: #fff;
+    color: #ffffffd7;
     transition: transform 0.3s, color 0.3s;
 }
 
@@ -127,7 +124,7 @@
 
 
 .container-principal {
-    margin-left: 35rem;
+    margin-left: 30rem;
 }
 
 #inicio {
@@ -187,18 +184,21 @@
 .container-sobre-mim {
     display: flex;
     flex-direction: row;
-    background-color: blue;
+    text-align: justify;
     gap: 5rem;
 }
 
 .container-lista-sobre-mim-e-botao-whatsapp {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     gap: 2rem;
     width: 500rem;
-    background-color: green;
+    text-align: justify;
+}
+
+.item-lista-sobre-mim {
+    border-bottom: solid 0.1rem  #343A40    
 }
 
 #servicos {
@@ -208,6 +208,51 @@
     background-color: #343A40;
     color: #fff;
 }
+
+.container-blocos-servicos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 8rem;
+    padding: 8rem;
+}
+
+
+
+.blocos-servicos{
+    font-size: 1.8rem;
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.imagem-servicos {
+    background-color :#00f7ff;
+    padding: 0.9rem;
+    height: 7rem;
+    border-radius: 0.5rem;
+}
+
+.container-titulo-texto-servicos {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.9rem;
+}
+
+.texto-servicos {
+    
+}
+
+
+
+
+
+
+
+
+
 
 #resumo {
     padding: 4rem;
@@ -250,4 +295,6 @@
     color: #fff;
     height: 6rem;
     text-align: center;
+    margin-left: 30rem;
+
 }
